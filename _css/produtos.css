@@ -1,0 +1,124 @@
+header {
+    background: #BBBBBB;
+    padding: 20px 0;
+}
+
+.logo{
+    transition: 1s transform;
+}
+
+.logo:hover {
+	transform: scale(1.1);
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li{
+    display: inline;/*inline  o conteudo ta tag é do tamanho do conteudo que esta ali / Quando a tag é do tipo block ela sera sempre 100% da pagina*/
+    margin: 0 0 0 15px;/*topo,direita,baixo,esquerda*/
+
+}
+
+nav a{
+    text-transform: uppercase;/*Transforma todo texto em maiusculo*/
+    color: #000000;
+    font-weight: bold;/*o peso da fonte é em negrito*/
+    font-size: 22px;/*tamanho da fonte esta com 22px*/
+    text-decoration: none;/*nenhuma decoração no texto, tira o subilinhado do texto*/
+
+}
+
+nav a:hover{
+    color:#c78c19;
+    text-decoration: underline;
+} 
+/*FIM HEADER*/
+
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}   
+
+.produtos li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
+}
+
+.produtos li:hover{
+    border-color: #c78c19;
+}
+
+.produtos li:active{
+    border-color: #088c19;
+}
+
+.produtos li:hover h2{
+    font-size: 34px;
+    
+}
+.produtos h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.produto-descricao {
+	font-size: 18px;
+}
+
+.produto-preco {
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: url("../_imagem/bg.jpg");
+    padding: 40px 0;
+}
+
+.rodape {
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+/*posição estatica, posição natural de um elemento / relativo, mudar o ponto inicial dele a partir do ponto inicial. Ele vai poder mudar de posição, mas cria um espaço entre ele e o ponto inicial / Absoluto, Para mudar a posição do ponto inicial que ele se encontra. eu consigo posicionar meu elemento em qualquer lugar da página.*/
+
+@media screen and (max-width: 480px){
+    .caixa, .produtos{
+        width: auto;
+    }
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    nav{
+        position: static;
+    }  
+    .produtos li{
+        display: block;
+        width: auto;
+        margin: 10px 10px;
+    }
+
+}

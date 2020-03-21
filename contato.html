@@ -1,0 +1,95 @@
+<!DOCTYPE html><!--Serve para  que o navegador possa ler o padrão do html-->
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"><!--corrige os acentos do texto-->
+        <meta name="viewport" content="width=device-width">
+        <title>Contatos - Barbearia Alura</title>
+        <link rel="stylesheet" href="_css/reset.css">
+        <link rel="stylesheet" href="_css/contato.css"><!--Ligação de um arquivo para o outro, vai dizer o relacionamento desse link (stylesheet = folha de estilo), e onde esta esse aquivo-->
+        
+    </head>
+    <body>
+        <header>
+            <div class="caixa">
+                <h1><img class="logo" src="_imagem/logo.png" alt="Logo da Barbearia Alura"></h1>
+                <nav>
+                    <ul>
+                        <a href="index.html"><li>Home</li></a>
+                        <a href="produtos.html"><li>Produtos</li></a>
+                        <a href="contato.html"><li>Contato</li></a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <form>
+                <div class="form">
+                    <label for="nomesobrenome">Nome e sobrenome</label>
+                    <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX)XXXXX-XXXX">
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea><!--o usuario tem a possibilidade de botar mais uma linha de texto / cols = numero de colunas / rows = linhas-->
+                </div>
+                <fieldset>
+                        <legend>Como prefere nosso contato?</legend>
+                        <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+                        
+
+                        <label for="radio-telefone"><input type="radio" name="contato" value="telefon" id="radio-telefone">Telefone</label>
+                        
+
+                        <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked >Whatsapp</label>
+                        
+                    </fieldset>
+
+                    <fieldset>
+                    <legend>Qual horário prefere ser atendido?</legend>
+                        <select>    
+                            <option>Manhã</option>
+                            <option>Tarde</option>
+                            <option>Noite</option>
+                        </select>   
+                    </fieldset>
+                
+                    <label><input type="checkbox" class="checkbox" checked>Gostaria de receber nossas novidades pelo email?</label>
+                    <input type="submit" value="Enviar formulário" class="enviar">
+                
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <footer>
+            <div>
+                <img src="_imagem/logo-branco.png" alt="Logo da Barbearia Alura">
+                <p class="rodape">&copy; Copyright Barbearia Alura - 2019</p>
+            </div>
+        </footer>
+    </body>
+</html>
